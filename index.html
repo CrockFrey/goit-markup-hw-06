@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--HEADER-->
@@ -33,7 +33,7 @@
                 </li>
             </ul>
         </nav>
-        
+
         <address class="header-address">
             <ul class="header-address-list">
                 <li class="header-address-link">
@@ -44,21 +44,28 @@
                 </li>
             </ul>    
         </address>   
+
+        <button class="mobile-open-btn" type="button">
+            <svg class="mobile-open-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+
        
         </div>
     </header>
-    
+  <!------------MAIN---------->  
     <main class="main-box">
     
-        <section class="section-box">
+        <!-- <section class="section-box">
             <div class="container main-box-container">
                 <h1 class="section-box-head">Effective Solutions
                 for Your Business</h1>
                 <button class="section-box-button" type="button">Order Service</button>
             </div>
-        </section>
+        </section> -->
         <!--Preorities-->
-        <section class="section-preor section-paddings">
+        <!-- <section class="section-preor section-paddings">
             <div class="container">
                 <h2 class="section-preor-head visually-hidden">Preorities</h2>
                 <ul class="section-preor-list">
@@ -104,9 +111,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Our Team-->
-        <section class="section-team section-paddings">
+        <!-- <section class="section-team section-paddings">
             <div class="container section-our-team">
             
                 <h2 class="section-team-header">Our Team</h2>
@@ -296,9 +303,9 @@
             
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!---Portfolio-->
-        <section class="section-portfolio section-paddings">
+        <!-- <section class="section-portfolio section-paddings">
             <div class="container">
 
                 <h2 class="section-portfolio-head">Our Portfolio</h2>
@@ -397,9 +404,9 @@
                 </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer-box">
+    <!-- <footer class="footer-box">
         <div class="container main-footer-container">
             <div style="margin-right: 120px;">
             <a class="footer-logo" href="./index.html">Web<span class="text-footer">Studio</span></a>
@@ -455,9 +462,9 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--========backdrop==========-->
-    <div class="backdrop when-open">
+    <!-- <div class="backdrop">
         <div class="modal">
             <button class="button-close" type="button">
                 <svg class="close-icon" width="8" height="8">
@@ -521,6 +528,73 @@
                 <button class="submit-btn" type="submit">Send</button>
             </form>
         </div>
+    </div> -->
+   <!----MOBILE MENU---->
+   <div class="mobile-window">
+    <div class="container mobile-window-container">
+        <button class="mobile-btn-close" >
+            <svg class="mobile-btn-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+                <li class="mobile-list-item">
+                    <a href="" class="mobile-list-link">Studio</a>
+                </li>
+                <li class="mobile-list-item">
+                    <a href="" class="mobile-list-link">Portfolio</a>
+                </li>
+                <li class="mobile-list-item">
+                    <a href="" class="mobile-list-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <address class="mobile-address">
+            <ul class="mobile-address-list">
+                <li class="mobile-address-item">
+                    <a class="mobile-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-address-item">
+                    <a class="mobile-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+
+            <div class="mobile-social">
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">
+                        <svg class="mobile-social-icon" weight="24px" height="24px">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">
+                        <svg class="mobile-social-icon" weight="24px" height="24px">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">
+                        <svg class="mobile-social-icon" weight="24px" height="24px">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">
+                        <svg class="mobile-social-icon" weight="24px" height="24px">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
     </div>
+   </div>
 </body>
 </html>
