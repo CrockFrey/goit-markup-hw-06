@@ -74,6 +74,13 @@ body {
     padding-bottom: 16px;
 }
 
+.header-main{
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 
+    0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .site-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -317,9 +324,58 @@ body {
     .header-address-list{
         display: flex;
     }
-    .header-container{
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
 }
+
+/*==========Main Box=========*/
+
+ .section-box {
+     max-width: 320px;
+     max-height: 432px;
+     padding-top: 72px;
+     padding-bottom: 72px;
+     margin: 0 auto;
+     background: #2e2f42;
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+     rgba(46, 47, 66, 0.7)), url(../images/background/people-office.jpg);
+     background-clip: border-box;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+  .section-box-head {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.07;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 48px;
+      max-width: 496px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .section-box-button {
+      background: #4d5ae5;
+      border-radius: 4px;
+      border: none;
+      display: block;
+      padding: 16px 32px;
+      min-width: 169px;
+      height: 56px;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin: 0 auto;
+
+  }
+
+  .section-box-button:hover,
+  .section-box-button:focus {
+      background: #404bbf;
+  }
