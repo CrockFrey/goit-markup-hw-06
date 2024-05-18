@@ -745,7 +745,7 @@ body {
     
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .section-portfolio-app {
         width: calc((100% - 48px) / 3);
     }
@@ -894,7 +894,6 @@ body {
 .footer-subscribe-form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     gap: 24px;
 }
@@ -914,7 +913,7 @@ body {
     color: #ffffff;
     cursor: pointer;
     border-radius: 4px;
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     background: #4d5ae5;
     border: none;
@@ -941,5 +940,53 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        margin-left: 108px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        margin-right: 24px;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-subscribe-form{
+        flex-direction: row;
+    }
+    .footer-subscribe-container{
+        display: inline-block;
+    }
+
+    .social-text{
+        text-align: left;
+    }
+    .footer-subscribe-input{
+        width: 264px;
+    }
+    .footer-subscribe-content{
+        display: flex;
     }
 }
+
+@media screen and (min-width: 1158px) {
+    .footer-container{
+        margin-right: 120px;
+    }
+
+    .main-footer-container{
+        margin-left: 15px;
+        justify-content: center;
+    }
+     
+    .social{
+        margin-right: 80px;
+    }
+
+    .main-footer-container{
+        justify-content: center;
+    }
+
+}
+
