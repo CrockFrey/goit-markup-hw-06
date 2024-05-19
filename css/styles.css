@@ -110,6 +110,7 @@ body {
 
 .header-nav-link {
     display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -145,7 +146,7 @@ body {
 .header-adress-item {
     display: block;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -181,7 +182,6 @@ body {
     .header-nav-list {
         display: none;
     }
-    
     .header-address-list {
         display: none;
     }
@@ -190,6 +190,7 @@ body {
         justify-content: space-between;
         align-items: center;
         }
+    
  /*===================MOBILE MENU====================*/
     .mobile-window {
         position: fixed;
@@ -309,6 +310,7 @@ body {
     display: none;
     }
     .header-container {
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
 
@@ -330,6 +332,9 @@ body {
     }
     .header-address-list{
         display: flex;
+    }
+    .header-adress-item{
+        font-size: 16px
     }
 }
 
@@ -358,7 +363,7 @@ body {
       text-align: center;
       color: #fff;
       margin-bottom: 48px;
-      max-width: 496px;
+      max-width: 216px;
       margin-left: auto;
       margin-right: auto;
   }
@@ -389,7 +394,7 @@ body {
 
   @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
       .section-box {
-          background-image: linear-gradient(to bottom,
+          background-image: linear-gradient(
                   rgba(46, 47, 66, 0.7),
                   rgba(46, 47, 66, 0.7)),
               url(../images/background/dark@2x.jpg);
@@ -402,7 +407,7 @@ body {
           padding-bottom: 112px;
           max-width: 768px;
           min-height: 436px;
-          background-image: linear-gradient(to bottom,
+          background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
           url(../images/background/dark-bg.jpg);
@@ -411,7 +416,7 @@ body {
 
   @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
       .section-box {
-          background-image: linear-gradient(to bottom,
+          background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/background/dark-bg@2x.jpg);
@@ -424,7 +429,7 @@ body {
           padding-bottom: 188px;
           max-width: 1440px;
           min-height: 600px;
-          background-image: linear-gradient(to bottom,
+          background-image: linear-gradient(
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)),
           url(../images/background/people-office.jpg);
@@ -433,7 +438,7 @@ body {
 
   @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
       .section-box {
-          background-image: linear-gradient(to bottom,
+          background-image: linear-gradient(
                   rgba(46, 47, 66, 0.7),
                   rgba(46, 47, 66, 0.7)),
               url(../images/background/people-office@2x.jpg);
@@ -585,10 +590,7 @@ body {
 }
 
 .section-team-worker {
-    display: flex;
-    flex-direction: column;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
     width: 264px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -762,6 +764,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -798,13 +801,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
-
     display: block;
     text-align: center;
 
 }
-
+.social{
+    margin-bottom: 72px;
+}
 .social-way {
     width: 40px;
     height: 40px;
@@ -827,12 +830,10 @@ body {
 }
 
 .social-thumb {
+    margin-top: 16px;
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-top: 8px;
-    margin-bottom: 72px;
-
 }
 
 .social-link:hover,
@@ -948,6 +949,7 @@ body {
         margin-right: 24px;
     }
     .social{
+        margin-bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -977,9 +979,14 @@ body {
 
     .main-footer-container{
         justify-content: center;
+        margin: 0;
     }
      
+    .footer-text{
+        margin-bottom: 0;
+    }
     .social{
+        margin-bottom: 0;
         margin-right: 80px;
     }
 
@@ -1022,7 +1029,7 @@ body {
         background-color: #ffffff;
         width: 288px;
         min-height: 623px;
-        padding: 72px 24px 16px 16px;
+        padding: 72px 16px 24px 16px;
         background-color: #fcfcfc;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1060,7 +1067,6 @@ body {
 }
 
 .modal-text {
-        max-width: 256px;
         margin-bottom: 16px;
         font-family: inherit;
         font-weight: 500;
@@ -1081,7 +1087,7 @@ body {
 
 .review-user-label {
         display: block;
-        width: 360px;
+        width: 100%;
         font-family: inherit;
         font-weight: 400;
         font-size: 12px;
@@ -1117,7 +1123,7 @@ body {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         width: 256px;
-        height: 58px;
+        height: 40px;
         padding-left: 38px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-color: transparent;
